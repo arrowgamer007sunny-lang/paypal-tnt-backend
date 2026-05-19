@@ -4,7 +4,9 @@ const app = express();
 
 app.use(express.json());
 
-let donations = [];
+let donations = [id: 1,
+   username: "Sunny",
+   amount: 5];
 
 app.post("/paypal-webhook", (req,res)=>{
 
